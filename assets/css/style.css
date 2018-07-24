@@ -3,3 +3,9 @@
     font-size: 70px;
     font-weight: bold;
 }
+
+#main-body {
+    border: 1px solid #dcdcdc;
+    padding: 20px;
+    width: 70%;
+}
