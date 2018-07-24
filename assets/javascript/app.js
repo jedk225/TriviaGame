@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    alert("You have 40 seconds to correctly answer as many GoT trivia questions as you can. Are you the smartest in the Seven Kingdoms?");
     var correct = 0;
     console.log("Correct: " + correct);
     var incorrect = 0;
@@ -21,7 +22,7 @@ $(document).ready(function () {
         }
         console.log(seconds);
         $("#time-remaining").html("<h4>" + "Time Remaining: " + seconds + " seconds" + "</h4>");
-       
+
     }
 
     function submitAnswers() {
