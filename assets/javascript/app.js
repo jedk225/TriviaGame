@@ -95,6 +95,15 @@ $(document).ready(function () {
             console.log("Incorrect: " + incorrect);
         }
 
+        var correctAnswer8 = document.getElementById("8c");
+        if (correctAnswer8.checked === true) {
+            correct++;
+            console.log("Correct: " + correct);
+        } else {
+            incorrect++;
+            console.log("Incorrect: " + incorrect);
+        }
+
         //alert("Correct: " + correct);
         //alert("Incorrect: " + incorrect);
         //window.location.href = 'results.html';
