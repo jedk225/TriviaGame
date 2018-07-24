@@ -6,7 +6,7 @@ $(document).ready(function () {
     console.log("Incorrect: " + incorrect);
     console.log("------------")
     var audio = new Audio("http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e3_winter_coming2.wav");
-    var seconds = 10;
+    var seconds = 40;
     console.log("Seconds: " + seconds);
     setTimeout(countDown, 1000);
 
