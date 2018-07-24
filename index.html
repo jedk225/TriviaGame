@@ -1,16 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jed's Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="assets/javascript/app.js"></script>
 
 </head>
+
 <body>
-    
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4" id="trivia-title">Trivia Game</h1>
+        </div>
+    </div>
+    <div class="container">
+
+        <h4>Time Remaining:
+            <span=id="time-remaining"></span>seconds</h4>
+
+        <form>
+            What is the name of Jon's direwolf?
+            <br>
+            <input type="radio" name="q1" value="correct" class="correct" id="1a"> Ghost
+            <input type="radio" name="q1" value="incorrect" class="incorrect" id="1b"> Wilding
+            <input type="radio" name="q1" value="incorrect" class="incorrect" id="1c"> Hodor
+            <input type="radio" name="q1" value="incorrect" class="incorrect" id="1d"> Echo
+        </form>
+        <br>
+        <form>
+            Which of the following characters DOES appear in season 1?
+            <br>
+            <input type="radio" name="q1" value="correct" class="correct" id="2a"> Stannis Baratheon
+            <input type="radio" name="q1" value="incorrect" class="incorrect" id="2b"> Craster
+            <input type="radio" name="q1" value="incorrect" class="incorrect" id="2c"> Beric Dondarrion
+            <input type="radio" name="q1" value="incorrect" class="incorrect" id="2d"> Roose Bolton
+        </form>
+        <br>
+        <form>
+            What noble house is Catelyn Stark from?
+            <br>
+            <input type="radio" name="q1" value="correct" class="correct" id="3a"> Lannister
+            <input type="radio" name="q1" value="incorrect" class="incorrect" id="3b"> Baratheon
+            <input type="radio" name="q1" value="incorrect" class="incorrect" id="3c"> Bolton
+            <input type="radio" name="q1" value="incorrect" class="incorrect" id="3d"> Tully
+        </form>
+
+        <br>
+        <button id="submitBTN">Submit</button>
+
+
+    </div>
 </body>
+
 </html>
