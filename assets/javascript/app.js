@@ -94,13 +94,14 @@ $(document).ready(function () {
             console.log("Incorrect: " + incorrect);
         }
 
-        alert("Correct: " + correct);
-        alert("Incorrect: " + incorrect);
+        //alert("Correct: " + correct);
+        //alert("Incorrect: " + incorrect);
         //window.location.href = 'results.html';
         $("#main-body").html("<h3>" + "Correct: " + correct + "</h3>" +
             "<h3>" + "Incorrect: " + incorrect + "</h3>" +
             "<h3>" + "Percentage Correct: " + Math.floor(correct / (correct + incorrect) * 100) + "%" + "</h3>");
         audio.play();
+        $("#main-body").append("<br>" + '<a id="start-over" href="index.html">Start Over</a>')
 
     }
 
