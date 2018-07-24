@@ -5,7 +5,24 @@ $(document).ready(function () {
     console.log("Incorrect: " + incorrect);
     console.log("------------")
     var audio = new Audio("http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e3_winter_coming2.wav");
+    var seconds = 10;
+    console.log("Seconds: " + seconds);
+    setTimeout(countDown, 1000);
 
+
+    $("#time-remaining").html("<h4>" + "Time Remaining: " + seconds + " seconds" + "</h4>");
+
+    function countDown() {
+        seconds--;
+        if (seconds > 0) {
+            setTimeout(countDown, 1000);
+        } else {
+            submitAnswers();
+        }
+        console.log(seconds);
+        $("#time-remaining").html("<h4>" + "Time Remaining: " + seconds + " seconds" + "</h4>");
+       
+    }
 
     function submitAnswers() {
         var correctAnswer1 = document.getElementById("1a");
@@ -82,8 +99,9 @@ $(document).ready(function () {
         //window.location.href = 'results.html';
         $("#main-body").html("<h3>" + "Correct: " + correct + "</h3>" +
             "<h3>" + "Incorrect: " + incorrect + "</h3>" +
-            "<h3>" + "Percentage Correct: " + Math.floor(correct/(correct+incorrect)*100) + "%" + "</h3>");
-            audio.play();
+            "<h3>" + "Percentage Correct: " + Math.floor(correct / (correct + incorrect) * 100) + "%" + "</h3>");
+        audio.play();
+
     }
 
 
